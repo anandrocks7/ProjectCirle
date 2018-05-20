@@ -16,13 +16,15 @@ public class Testbase {
 
 	public static WebDriver driver;
 	public static Properties prop;
+	static String Projectpath =System.getProperty("user.dir");
 	
 	public Testbase()
 	{
 		try {
 		prop = new Properties();
-		//System.out.println(System.getProperty("user.dir"));
-		FileInputStream ip = new FileInputStream("C:\\Selenium_Project\\Circles_Test\\src\\main\\java\\com\\circle\\qa\\config\\config.properties");
+		
+		FileInputStream ip = new FileInputStream(Projectpath+"\\src\\main\\java\\com\\circle\\qa\\config\\config.properties");
+		//FileInputStream ip = new FileInputStream("C:\\Selenium_Project\\Circles_Test\\src\\main\\java\\com\\circle\\qa\\config\\config.properties");
 		prop.load(ip);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -40,13 +42,15 @@ public class Testbase {
 		String browsername= prop.getProperty("browser");
 		if(browsername.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:\\Selenium_additionalinstalls\\chromedriver_win32\\chromedriver.exe");
-		 driver=new ChromeDriver();
+			//System.setProperty("webdriver.chrome.driver", "C:\\Selenium_additionalinstalls\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", Projectpath+"\\Browser\\chromedriver.exe");
+				
+			driver=new ChromeDriver();
 		}else if (browsername.equals("firefox")) 
 		{
 			
-			System.setProperty("webdriver.gecko.driver","C:\\Users\\Anand\\Downloads\\Donloads for selenium\\geckodriver-v0.20.1-win64\\geckodriver.exe");
-			//System.setProperty("webdriver.gecko.driver","C:\\Program Files\\Mozilla Firefox\\firefox.exe"); 
+			System.setProperty("webdriver.gecko.driver",Projectpath+"\\Browser\\geckodriver.exe");
+			
 			driver = new FirefoxDriver();
 		}
 		 

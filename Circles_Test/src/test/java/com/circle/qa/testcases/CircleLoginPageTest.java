@@ -33,6 +33,8 @@ public class CircleLoginPageTest extends Testbase {
 		String ctitle = cloginpgObj.validateloginpagetitle();
 		System.out.println("Page title is - "+ ctitle);
 		Assert.assertEquals(ctitle, "Unlimit your telco. Now.");
+		
+		
 			
 	}
 	

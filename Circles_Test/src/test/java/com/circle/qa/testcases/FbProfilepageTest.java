@@ -30,7 +30,7 @@ public class FbProfilepageTest extends Testbase {
 	
 	@BeforeClass
 	public void setup() throws Exception {
-		
+		Thread.sleep(5000);
 		Initialization();
 		cloginpageobj= new CircleLoginpage();
 		chomepageobj= cloginpageobj.logincircle(prop.getProperty("emailc"), prop.getProperty("pwdc"));
@@ -67,10 +67,13 @@ public class FbProfilepageTest extends Testbase {
 	}
 	
 	@Test(priority=2)
-	public void VerifycommentTest() {
+	public void VerifycommentTest() throws Exception {
+		
 		
 		boolean Val= fbProfilepgobj.Verifycomment();
 		Assert.assertTrue(Val);
+		Thread.sleep(2000);
+		
 	}
 	
 	@AfterClass

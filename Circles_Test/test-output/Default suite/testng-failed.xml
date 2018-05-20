@@ -6,7 +6,6 @@
       <class name="com.circle.qa.testcases.FbProfilepageTest">
         <methods>
           <include name="PostcommentTest"/>
-          <include name="TearDown"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.circle.qa.testcases.FbProfilepageTest -->

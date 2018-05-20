@@ -11,6 +11,20 @@
           <include name="setup"/>
         </methods>
       </class> <!-- com.circle.qa.testcases.FbProfilepageTest -->
+      <class name="com.circle.qa.testcases.FbLoginPageTest">
+        <methods>
+          <include name="Fblogintest"/>
+          <include name="TearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.circle.qa.testcases.FbLoginPageTest -->
+      <class name="com.circle.qa.testcases.CicrleMyaccountpageTest">
+        <methods>
+          <include name="Clickfblinktest"/>
+          <include name="setup"/>
+          <include name="TearDown"/>
+        </methods>
+      </class> <!-- com.circle.qa.testcases.CicrleMyaccountpageTest -->
     </classes>
   </test> <!-- Cicrle Application Test Cases(failed) -->
 </suite> <!-- Failed suite [Circle Application Test Automation suite] -->

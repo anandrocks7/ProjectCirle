@@ -26,7 +26,7 @@ public class FbLoginPageTest extends Testbase {
 	
 	@BeforeClass
 	public void setup() throws Exception {
-		
+		Thread.sleep(5000);
 		Initialization();
 		cloginpageobj= new CircleLoginpage();
 		chomepageobj= cloginpageobj.logincircle(prop.getProperty("emailc"), prop.getProperty("pwdc"));

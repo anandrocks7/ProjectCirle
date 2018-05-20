@@ -12,15 +12,17 @@ public class FbProfilepage extends Testbase{
 	
 	
 	
-	@FindBy(xpath= "//input[@class='_1osa mentionsHidden' and  @name='add_comment_text']")  
+	@FindBy(xpath= "//div[@id='addComment_106679140213721']//div/descendant::div[contains(@class,'UFIAddCommentInput')]")  
 	WebElement Inputcommentbox;
 	// //div[contains(@class,'UFIAddCommentInput')]
 	////div[@id='addComment_106679140213721']//div/descendant::div[contains(@class,'UFIAddCommentInput')]
+	////input[@class='_1osa mentionsHidden' and  @name='add_comment_text']
 	
 	
 	
 	@FindBy(xpath= "//span[@class='UFICommentBody']//span[text()='bb']")
 	WebElement Commentposted;
+	////descendant::span[@class='UFICommentBody'][2]
 	
 	
 	public FbProfilepage() {
@@ -33,10 +35,9 @@ public class FbProfilepage extends Testbase{
 	public void Postcomment(String comment) throws Exception {
 		Thread.sleep(8000);
 		Inputcommentbox.click();
-	
-		
+		Thread.sleep(2000);
 		Inputcommentbox.sendKeys(comment);
-		Thread.sleep(1000);
+		
 		Inputcommentbox.sendKeys(Keys.ENTER);
 	}
 	
