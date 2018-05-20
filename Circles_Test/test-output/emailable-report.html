@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Circle Application Test Automation suite</th></tr>
+<tr><td><a href="#t0">Cicrle Application Test Cases</a></td><td class="num">8</td><td class="num">0</td><td class="num attn">2</td><td class="num">282,586</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Circle Application Test Automation suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Cicrle Application Test Cases &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.circle.qa.testcases.FbProfilepageTest</td><td><a href="#m0">PostcommentTest</a></td><td rowspan="1">1526799620446</td><td rowspan="1">8424</td></tr><tr class="failedeven"><td><a href="#m1">VerifycommentTest</a></td><td rowspan="1">1526799672180</td><td rowspan="1">2</td></tr><tr><th colspan="4">Cicrle Application Test Cases &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.circle.qa.testcases.CicrleMyaccountpageTest</td><td><a href="#m2">Clickfblinktest</a></td><td rowspan="1">1526799636514</td><td rowspan="1">6577</td></tr><tr class="passedeven"><td><a href="#m3">Emailverifytest</a></td><td rowspan="1">1526799460290</td><td rowspan="1">75</td></tr><tr class="passedodd"><td rowspan="2">com.circle.qa.testcases.CircleHomePageTest</td><td><a href="#m4">Homelinkverifytest</a></td><td rowspan="1">1526799429682</td><td rowspan="1">3108</td></tr><tr class="passedodd"><td><a href="#m5">Myaccountlinkclicktest</a></td><td rowspan="1">1526799630034</td><td rowspan="1">6478</td></tr><tr class="passedeven"><td rowspan="2">com.circle.qa.testcases.CircleLoginPageTest</td><td><a href="#m6">circlelogintest</a></td><td rowspan="1">1526799628920</td><td rowspan="1">1111</td></tr><tr class="passedeven"><td><a href="#m7">circlepagetitletest</a></td><td rowspan="1">1526799411171</td><td rowspan="1">24</td></tr><tr class="passedodd"><td rowspan="2">com.circle.qa.testcases.FbLoginPageTest</td><td><a href="#m8">Fblogintest</a></td><td rowspan="1">1526799643093</td><td rowspan="1">14612</td></tr><tr class="passedodd"><td><a href="#m9">fbtitlepagetest</a></td><td rowspan="1">1526799498560</td><td rowspan="1">8877</td></tr></tbody>
+</table>
+<h2>Cicrle Application Test Cases</h2><h3 id="m0">com.circle.qa.testcases.FbProfilepageTest#PostcommentTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementNotVisibleException: element not visible
+  (Session info: chrome=66.0.3359.181)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;ANDY&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.38.552522 (437e6fbedfa876..., userDataDir: C:\Users\Anand\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 66.0.3359.181, webStorageEnabled: true}
+Session ID: 60f7e66e8aa64d7d69b53e281c3f422c
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.circle.qa.pages.FbProfilepage.Postcomment(FbProfilepage.java:35)
+	at com.circle.qa.testcases.FbProfilepageTest.PostcommentTest(FbProfilepageTest.java:65)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.circle.qa.testcases.FbProfilepageTest#VerifycommentTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;ANDY&apos;, ip: &apos;192.168.0.104&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:317)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:419)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:309)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
+	at com.circle.qa.pages.FbProfilepage.Verifycomment(FbProfilepage.java:45)
+	at com.circle.qa.testcases.FbProfilepageTest.VerifycommentTest(FbProfilepageTest.java:72)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.circle.qa.testcases.CicrleMyaccountpageTest#Clickfblinktest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.circle.qa.testcases.CicrleMyaccountpageTest#Emailverifytest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.circle.qa.testcases.CircleHomePageTest#Homelinkverifytest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.circle.qa.testcases.CircleHomePageTest#Myaccountlinkclicktest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.circle.qa.testcases.CircleLoginPageTest#circlelogintest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.circle.qa.testcases.CircleLoginPageTest#circlepagetitletest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.circle.qa.testcases.FbLoginPageTest#Fblogintest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.circle.qa.testcases.FbLoginPageTest#fbtitlepagetest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

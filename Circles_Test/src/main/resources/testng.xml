@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Circle Application Test Automation suite" verbose="1" >
+  <test name="Cicrle Application Test Cases" >
+    <classes>
+      <class name="com.circle.qa.testcases.CircleLoginPageTest"/>
+      <class name="com.circle.qa.testcases.CircleHomePageTest"/>
+       <class name="com.circle.qa.testcases.CicrleMyaccountpageTest"/>
+      <class name="com.circle.qa.testcases.FbLoginPageTest"/>
+      <class name="com.circle.qa.testcases.FbProfilepageTest"/>
+    </classes>
+ </test>
+</suite>
