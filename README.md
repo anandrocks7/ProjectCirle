@@ -1,6 +1,8 @@
 # ProjectCirle
 To run the tests Navigate to "Circles_Test/Src/main/resources/Testng.xml". Right click on Testng.xml , run as Testng suite.
+
 Path for Base file "Circles_Test\src\main\java\com\circle\qa\base\Testbase.java"
+
 Path for Config.properties file "Circles_Test\src\main\java\com\circle\qa\config\config.properties"
 
 Project Description:
