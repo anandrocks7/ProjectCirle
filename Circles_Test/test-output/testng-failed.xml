@@ -3,12 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.circle.qa.testcases.FbProfilepageTest">
+      <class name="com.circle.qa.testcases.CircleLoginPageTest">
         <methods>
-          <include name="PostcommentTest"/>
           <include name="setup"/>
+          <include name="circlelogintest"/>
+          <include name="teardown"/>
+          <include name="circlepagetitletest"/>
         </methods>
-      </class> <!-- com.circle.qa.testcases.FbProfilepageTest -->
+      </class> <!-- com.circle.qa.testcases.CircleLoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
